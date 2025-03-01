@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,10 +20,29 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body>
+        <div className="flex h-screen">
+          {/* Sidebar */}
+          <aside className="w-64 bg-gray-900 text-white p-5 flex flex-col space-y-4">
+            <div><img src="/images/logo.png" alt="MesaMate Logo" className="w-full" /></div>
+            <nav className="flex flex-col space-y-2">
+              <Link href="/dashboard" className="hover:bg-gray-700 p-2 rounded">
+                Dashboard
+              </Link>
+              <Link href="/settings" className="hover:bg-gray-700 p-2 rounded">
+                Settings
+              </Link>
+              <Link href="/profile" className="hover:bg-gray-700 p-2 rounded">
+                Profile
+              </Link>
+            </nav>
+          </aside>
+
+          {/* Main Content */}
+          <main className="flex-1 p-6 bg-white overflow-auto">
+            {children}
+          </main>
+        </div>
       </body>
     </html>
   );
