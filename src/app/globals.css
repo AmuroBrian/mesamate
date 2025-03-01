@@ -8,6 +8,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --yellowbg: #ffff00;
+  --lightyellow: #fffa82;
 }
 
 @media (prefers-color-scheme: dark) {
