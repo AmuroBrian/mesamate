@@ -38,7 +38,7 @@ const products = [
         productimage: "/images/longsilog.png",
         productdescription: "Longsilog is a traditional Filipino breakfast dish of garlic fried rice, fried egg, and longganisa sausage.",
         productcategory: "food",
-    },  
+    },
     {
         productid: "bangsilog",
         productname: "Bangsilog",
@@ -46,7 +46,7 @@ const products = [
         productimage: "/images/bangsilog.png",
         productdescription: "Bangsilog is a Filipino dish of fried milkfish, garlic fried rice, and fried egg. ",
         productcategory: "food",
-    },  
+    },
     {
         productid: "hipsilog",
         productname: "Hipsilog",
@@ -54,7 +54,7 @@ const products = [
         productimage: "/images/hipsilog.png",
         productdescription: "Hipsilog is a traditional Filipino breakfast dish of garlic fried rice, fried egg, and steam shrimp.",
         productcategory: "food",
-    },  
+    },
     {
         productid: "liemposilog",
         productname: "Liemposilog",
@@ -62,7 +62,7 @@ const products = [
         productimage: "/images/liemposilog.png",
         productdescription: "Liemposilog is a traditional Filipino breakfast dish of garlic fried rice, fried egg, and grilled liempo.",
         productcategory: "food",
-    },  
+    },
     {
         productid: "Crabsilog",
         productname: "Crabsilog",
@@ -70,7 +70,7 @@ const products = [
         productimage: "/images/crabsilog.png",
         productdescription: "Crabsilog is a dish that typically features crab meat, eggs, and other ingredients served on top of silog. ",
         productcategory: "food",
-    },  
+    },
     {
         productid: "chichasilog",
         productname: "Chichasilog",
@@ -78,7 +78,7 @@ const products = [
         productimage: "/images/chichasilog.png",
         productdescription: "Chichasilog is a traditional Filipino breakfast dish of garlic fried rice, fried egg, and chicharon.",
         productcategory: "food",
-    },  
+    },
     {
         productid: "nilsilog",
         productname: "Nilsilog",
@@ -86,7 +86,7 @@ const products = [
         productimage: "/images/nilsilog.png",
         productdescription: "A hearty soup filled with tender red meat and fresh green pechay, when paired with the fried rice and sunny-side up egg.",
         productcategory: "food",
-    },  
+    },
     {
         productid: "barsilog",
         productname: "Barsilog",
@@ -94,7 +94,7 @@ const products = [
         productimage: "/images/barsilog.png",
         productdescription: "Barsilog is a dish of pork barbecue, garlic rice, and egg. ",
         productcategory: "food",
-    },  
+    },
     {
         productid: "dinsilog",
         productname: "Dinsilog",
@@ -110,7 +110,7 @@ const products = [
         productimage: "/images/sisig.png",
         productdescription: "Sisig is a flavorful Filipino dish of crispy pork parts, chicken livers, and a spicy, sour dressing.",
         productcategory: "food",
-    }, 
+    },
     {
         productid: "bulalo",
         productname: "Bulalo",
