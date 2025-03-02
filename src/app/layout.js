@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
           </aside>
 
           {/* Main Content */}
-          <main className="flex-1 p-6 bg-white overflow-auto">
+          <main className="flex-1 bg-white overflow-auto">
             <CartProvider>
               {children}
             </CartProvider>
