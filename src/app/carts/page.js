@@ -28,6 +28,29 @@ export default function Carts() {
         }
     }, [cart, totalAmount]);
 
+    const handleSaveCart = async () => {
+        if (!cartJson) return;
+
+        try {
+            const response = await fetch('/api/saveCart', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: cartJson
+            });
+
+            const data = await response.json();
+            if (data.success) {
+                alert(`Order Saved! Order ID: ${data.orderID}`);
+            } else {
+                alert(`Error: ${data.error}`);
+            }
+        } catch (error) {
+            console.error("Failed to save cart:", error);
+            alert("Failed to save cart.");
+        }
+    };
+
+
     return (
         <div className='p-6 relative'>
             {/* Total Price - Upper Right Position */}
@@ -51,6 +74,12 @@ export default function Carts() {
                             </li>
                         ))}
                     </ul>
+                    <button
+                        onClick={handleSaveCart}
+                        className="mt-4 bg-green-500 text-white px-4 py-2 rounded-lg shadow-md"
+                    >
+                        Save Order
+                    </button>
 
                     {/* Display JSON Data */}
                     <div className="mt-6 p-4 bg-gray-100 rounded-lg shadow-md">
