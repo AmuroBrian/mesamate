@@ -2,7 +2,8 @@ import mysql from 'mysql2/promise';
 
 // Create a MySQL connection pool
 const pool = mysql.createPool({
-    host: "192.168.100.90",
+    //host: "192.168.254.163",
+    host: "192.168.100.26",
     port: 3307, // Your XAMPP MySQL host
     user: "root",      // Your MySQL username (default in XAMPP is 'root')
     password: "",      // Your MySQL password (default in XAMPP is empty)

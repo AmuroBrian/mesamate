@@ -22,24 +22,25 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <div className="flex h-screen">
           {/* Sidebar */}
-          <aside className="w-64 bg-[var(--lightyellow)] text-white p-5 flex flex-col space-y-4">
-            <div><img src="/images/logo.png" alt="MesaMate Logo" className="w-full" /></div>
-            <div className="w-full h-[50px]"></div>
-            <nav className="flex flex-col space-y-2 gap-4">
-              <Link href="/foods" className="hover:bg-[var(--yellowbg)] p-2 rounded text-black flex gap-2">
-                <Utensils size={20} /> FOODS
+          <aside className="bg-[var(--lightyellow)] text-white p-5 flex flex-col items-center md:items-start space-y-4 transition-all duration-300 w-20 md:w-64">
+            <div className="w-full">
+              <img src="/images/logo.png" alt="MesaMate Logo" className="w-full" />
+            </div>
+            <nav className="flex flex-col gap-4 w-full mt-4">
+              <Link href="/foods" className="hover:bg-[var(--yellowbg)] p-2 rounded text-black flex items-center gap-2">
+                <Utensils size={20} /> <span className="hidden md:inline">FOODS</span>
               </Link>
-              <Link href="/drinks" className="hover:bg-[var(--yellowbg)] p-2 rounded text-black flex gap-2">
-                <CupSoda size={20} /> DRINKS
+              <Link href="/drinks" className="hover:bg-[var(--yellowbg)] p-2 rounded text-black flex items-center gap-2">
+                <CupSoda size={20} /> <span className="hidden md:inline">DRINKS</span>
               </Link>
-              <Link href="/desserts" className="hover:bg-[var(--yellowbg)] p-2 rounded text-black flex gap-2">
-                <IceCream size={20} /> DESSERTS
+              <Link href="/desserts" className="hover:bg-[var(--yellowbg)] p-2 rounded text-black flex items-center gap-2">
+                <IceCream size={20} /> <span className="hidden md:inline">DESSERTS</span>
               </Link>
-              <Link href="/carts" className="hover:bg-[var(--yellowbg)] p-2 rounded text-black flex gap-2">
-                <ShoppingCart size={20} /> CARTS
+              <Link href="/carts" className="hover:bg-[var(--yellowbg)] p-2 rounded text-black flex items-center gap-2">
+                <ShoppingCart size={20} /> <span className="hidden md:inline">CARTS</span>
               </Link>
             </nav>
           </aside>
