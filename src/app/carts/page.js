@@ -53,10 +53,10 @@ export default function Carts() {
                     </ul>
 
                     {/* Display JSON Data */}
-                    <div className="mt-6 p-4 bg-gray-100 rounded-lg shadow-md">
+                    {/* <div className="mt-6 p-4 bg-gray-100 rounded-lg shadow-md">
                         <h2 className='text-lg font-semibold mb-2'>Cart JSON Data:</h2>
                         <pre className="text-sm bg-white p-2 rounded-lg border overflow-auto">{cartJson}</pre>
-                    </div>
+                    </div> */}
                 </>
             )}
         </div>
